@@ -1,0 +1,10 @@
+{
+      "manifest_version": 3,
+      "name": "Smart Resume Matcher (Styled)",
+      "description": "Upload, view, match, and download resumes based on JD skills — now beautiful!",
+      "version": "2.6",
+      "permissions": ["storage", "sidePanel"],
+      "background": { "service_worker": "background.js" },
+      "action": { "default_title": "Resume Matcher" },
+      "side_panel": { "default_path": "panel.html" }
+    }

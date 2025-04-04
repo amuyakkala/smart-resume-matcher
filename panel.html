@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Smart Resume Matcher</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="pdf.min.js"></script>
+      <script src="panel.js" defer></script>
+    </head>
+    <body>
+      <div class="container">
+        <h1>📄 Smart Resume Matcher</h1>
+
+        <section>
+          <h2>📤 Upload Resumes</h2>
+          <input type="file" id="file-input" multiple accept="application/pdf" />
+          <button id="upload-btn">Store Resumes</button>
+          <button id="delete-all-btn" class="danger">Delete All Resumes</button>
+          <ul id="resume-list" class="resume-list"></ul>
+        </section>
+
+        <section>
+          <h2>📝 Paste Job Description</h2>
+          <textarea id="jd-input" rows="10" placeholder="Paste job description here..."></textarea><br />
+          <button id="match-btn">Match Resumes</button>
+          <ul id="match-results" class="match-results"></ul>
+        </section>
+
+        <section id="viewer-section" style="display:none;">
+          <h2>👀 Viewing Resume Content:</h2>
+          <pre id="resume-viewer"></pre>
+        </section>
+      </div>
+    </body>
+    </html>
